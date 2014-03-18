@@ -1,20 +1,11 @@
-var Todo = Backbone.Model.extend();
-var TodoView = Backbone.View.extend({
+$(document).ready(function(){
 
+	Backbone.history.start();
 
-	initialize: function(){
-		console.log('hello there');
-
-	},
-
-
-	render: function(){
-
-	}
 });
 
-var firstModel = {
-	description: 'go to sleep',
-	completed: false,
-	id: _.uniqueId('todo')
-};
+$('.add-todo').click(function(){
+	var todo = new this.model
+
+	var todoItem = $('.js-new-todo-input').val();
+});
